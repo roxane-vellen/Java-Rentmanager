@@ -7,7 +7,9 @@ public class Reservation {
 	
 	private int id;
 	private int idclient;
+	private String nameClient;
 	private int idvehicule;
+	private String nameVehicle;
 	private LocalDate debut;
 	private LocalDate fin;
 	
@@ -26,6 +28,15 @@ public class Reservation {
 		super();
 		this.idclient = idclient;
 		this.idvehicule = idvehicule;
+		this.debut = debut;
+		this.fin = fin;
+	}
+	
+	public Reservation(int id, String nameClient, String nameVehicle, LocalDate debut, LocalDate fin) {
+		super();
+		this.id = id;
+		this.nameClient = nameClient;
+		this.nameVehicle = nameVehicle;
 		this.debut = debut;
 		this.fin = fin;
 	}
@@ -70,6 +81,23 @@ public class Reservation {
 	}
 	
 	
+	
+	public String getNameClient() {
+		return nameClient;
+	}
+	public void setNameClient(String nameClient) {
+		this.nameClient = nameClient;
+	}
+	public String getNameVehicle() {
+		return nameVehicle;
+	}
+	public void setNameVehicle(String nameVehicle) {
+		this.nameVehicle = nameVehicle;
+	}
+	
+	
+	
+
 	public int getNbDays() {
         int nbDays = (int) ChronoUnit.DAYS.between(this.getDebut(), this.getFin());
         return nbDays;

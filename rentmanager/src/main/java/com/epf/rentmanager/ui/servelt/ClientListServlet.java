@@ -12,29 +12,30 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.epf.rentmanager.exception.ServiceException;
-import com.epf.rentmanager.service.VehicleService;
+import com.epf.rentmanager.service.ClientService;
 
-@WebServlet("/cars")
-public class VehicleServlet extends HttpServlet {
+@WebServlet("/users")
+public class ClientListServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	private static String Vue_Formulaire = "/WEB-INF/views/vehicles/list.jsp";
-	
+	private static String Vue_Formulaire = "/WEB-INF/views/users/list.jsp";
+
 	@Autowired
-	VehicleService vehicleService;
-	
+	ClientService clientService;
+
 	@Override
 	public void init() throws ServletException {
-	super.init();
-	SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
+		super.init();
+		SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
 	}
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		try {
-			request.setAttribute("listVehicles", this.vehicleService.findAll());
+			request.setAttribute("listUsers", this.clientService.findAll());
 
 			this.getServletContext().getRequestDispatcher(Vue_Formulaire).forward(request, response);
 

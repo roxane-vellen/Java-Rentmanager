@@ -12,31 +12,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.epf.rentmanager.exception.ServiceException;
-import com.epf.rentmanager.service.ReservationService;
+import com.epf.rentmanager.service.VehicleService;
 
-@WebServlet("/rents")
-public class ReservationServlet extends HttpServlet {
-	
+@WebServlet("/cars")
+public class VehicleListServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
-	
-	private static String Vue_Formulaire = "/WEB-INF/views/rents/list.jsp";
+
+	private static String Vue_Formulaire = "/WEB-INF/views/vehicles/list.jsp";
 	
 	@Autowired
-	ReservationService reservationService;
+	VehicleService vehicleService;
 	
 	@Override
-    public void init() throws ServletException {
-        super.init();
-        SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
-    }
+	public void init() throws ServletException {
+	super.init();
+	SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
+	}
 
-	
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		try {
-			request.setAttribute("listReservations", this.reservationService.findAll());
+			request.setAttribute("listVehicles", this.vehicleService.findAll());
 
 			this.getServletContext().getRequestDispatcher(Vue_Formulaire).forward(request, response);
 

@@ -28,8 +28,8 @@
                             <table class="table table-striped">
                                 <tr>
                                     <th style="width: 30px">#</th>
-                                    <th>ID Voiture</th>
-                                    <th>ID Client</th>
+                                    <th>Voiture</th>
+                                    <th>Client</th>
                                     <th>Debut</th>
                                     <th>Fin</th>
                                     <th>Action</th>
@@ -38,8 +38,8 @@
                                 <c:forEach items="${listReservations}" var="rent">
 										<tr>
 											<td>${rent.id}</td>
-											<td>${rent.idvehicule}</td>
-											<td>${rent.idclient}</td>
+											<td>${rent.nameVehicle}</td>
+											<td>${rent.nameClient}</td>
 											<td>${rent.debut}</td>
 											<td>${rent.fin}</td>
 											<td><a class="btn btn-primary" href="${pageContext.request.contextPath}/rents/details?id=${rent.id}">
