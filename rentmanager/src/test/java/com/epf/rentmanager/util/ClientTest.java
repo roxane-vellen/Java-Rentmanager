@@ -1,4 +1,4 @@
-package com.epf.rentmanager.uni;
+package com.epf.rentmanager.util;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -58,5 +58,20 @@ public class ClientTest {
 		// Then
 		assertFalse(client.isFirstnameLong());
 	}
-
+	
+	@Test
+	public void is_Email_Right_True() {
+		// Given
+		Client client = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		// Then
+		assertTrue(client.isEmailRight());
+	}
+	
+	@Test
+	public void is_Email_Right_False() {
+		// Given
+		Client client = new Client("Smith", "John", "smith.john@mailcom", LocalDate.parse("1999-10-09"));
+		// Then
+		assertFalse(client.isEmailRight());
+	}
 }

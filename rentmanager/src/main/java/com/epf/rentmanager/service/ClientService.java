@@ -30,6 +30,9 @@ public class ClientService {
 		else if(!client.isFirstnameLong()) {
 			throw new ServiceException("Le prénom de l'utilisateur doit avoir au moins 3 caractères");	
 		}
+		else if(!client.isEmailRight()) {
+			throw new ServiceException("L'email n'est pas conforme");	
+		}
 		else if(hasSameEmail(client)) {
 			throw new ServiceException("L'email est déjà utilisé");	
 		}
@@ -62,8 +65,7 @@ public class ClientService {
 			} catch (DaoException e) {
 				e.printStackTrace();
 			}
-		}	
-		
+		}			
 		return 0;
 	}
 

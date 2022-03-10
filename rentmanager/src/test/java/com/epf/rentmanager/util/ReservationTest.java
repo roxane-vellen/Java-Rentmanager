@@ -1,4 +1,4 @@
-package com.epf.rentmanager.uni;
+package com.epf.rentmanager.util;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

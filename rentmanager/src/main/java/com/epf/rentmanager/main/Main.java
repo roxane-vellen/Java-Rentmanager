@@ -50,22 +50,21 @@ public class Main {
 //    	
 //    	List<Client> listClients = new ArrayList<>();
         
-        Vehicle vehicle = new Vehicle("constructeur1", "modele1", 2);
-        List<Vehicle> listVehicles = new ArrayList<>();
-        
-    	
-    	try {
-			int id = vehicleService.create(vehicle);
-			
-			listVehicles = vehicleService.findAll();
-    		
-			System.out.println(listVehicles);
-			
-			
-		} catch (ServiceException e) {
-			e.printStackTrace();
-		}
-    	
+//        Vehicle vehicle = new Vehicle("constructeur1", "modele1", 2);
+//        List<Vehicle> listVehicles = new ArrayList<>();
+//        
+//    	
+//    	try {
+//			int id = vehicleService.create(vehicle);
+//			
+//			listVehicles = vehicleService.findAll();
+//    		
+//			System.out.println(listVehicles);
+//			
+//			
+//		} catch (ServiceException e) {
+//			e.printStackTrace();
+//		}
     	
     }
 }
