@@ -1,6 +1,7 @@
 package com.epf.rentmanager.model;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Reservation {
 	
@@ -10,9 +11,7 @@ public class Reservation {
 	private LocalDate debut;
 	private LocalDate fin;
 	
-	public Reservation() {
-		
-	}
+	public Reservation() {}
 	
 	public Reservation(int id, int idclient, int idvehicule, LocalDate debut, LocalDate fin) {
 		super();
@@ -30,8 +29,7 @@ public class Reservation {
 		this.debut = debut;
 		this.fin = fin;
 	}
-	
-	
+		
 
 	@Override
 	public String toString() {
@@ -39,6 +37,7 @@ public class Reservation {
 				+ ", fin=" + fin + "]";
 	}
 
+	
 	public int getId() {
 		return id;
 	}
@@ -71,6 +70,18 @@ public class Reservation {
 	}
 	
 	
+	public int getNbDays() {
+        int nbDays = (int) ChronoUnit.DAYS.between(this.getDebut(), this.getFin());
+        return nbDays;
+    }
 	
+	public boolean ismore7Days() {
+		boolean ismore7Days = false;
+		if(this.getNbDays() > 7) {
+			ismore7Days = true;
+		}
+		return ismore7Days;
+	}
+		
 
 }

@@ -47,7 +47,7 @@
                                 <div class="box-body no-padding">
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>ID Client</th>
                                             <th>Date de debut</th>
                                             <th>Date de fin</th>
@@ -55,8 +55,8 @@
                                         
                                         <c:forEach items="${reservations}" var="reservation">
 		                                    <tr>
-			                                    <td>${reservation.id}.</td>
-			                                    <td>${reservation.idclient}.</td>			                                 
+			                                    <td>${reservation.id}</td>
+			                                    <td>${reservation.idclient}</td>			                                 
 			                                    <td>${reservation.debut}</td>
 			                                    <td>${reservation.fin}</td>                         
 		                                	</tr>
@@ -70,7 +70,7 @@
                                 <div class="box-body no-padding">
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>Nom</th>
                                             <th>Prenom</th>
                                             <th>Email</th>
@@ -79,7 +79,7 @@
                                         
                                         <c:forEach items="${clients}" var="client">
 		                                    <tr>
-			                                    <td>${client.id} </td>
+			                                    <td>${client.id}</td>
 			                                    <td>${client.lastname}</td>
 			                                    <td>${client.firstname}</td>
 			                                    <td>${client.email}</td>

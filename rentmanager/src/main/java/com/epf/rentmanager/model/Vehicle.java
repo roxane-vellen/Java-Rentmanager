@@ -7,9 +7,7 @@ public class Vehicle {
 	private String model;
 	private int nb_places;
 	
-	public Vehicle() {
-		
-	}
+	public Vehicle() {}
 	
 	public Vehicle(int id, String constructor, String model, int nb_places) {
 		super();
@@ -25,14 +23,7 @@ public class Vehicle {
 		this.model = model;
 		this.nb_places = nb_places;
 	}
-	
-	public Vehicle(int id, String constructor, int nb_places) {
-		super();
-		this.id = id;
-		this.constructor = constructor;
-		this.nb_places = nb_places;
-	}
-	
+		
 	
 	@Override
 	public String toString() {

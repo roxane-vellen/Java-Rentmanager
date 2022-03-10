@@ -31,6 +31,11 @@ public class Client {
 		this.birthdate = birthdate;		
 	}
 	
+	@Override
+	public String toString() {
+		return "Client [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
+				+ ", birthdate=" + birthdate + "]";
+	}
 	
 	public void setId(int id) {
 		this.id = id;
@@ -84,13 +89,6 @@ public class Client {
 		else {return false;}
 	}
 
-	@Override
-	public String toString() {
-		return "Client [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
-				+ ", birthdate=" + birthdate + "]";
-	}
-	
-	
-	
+		
 	
 }

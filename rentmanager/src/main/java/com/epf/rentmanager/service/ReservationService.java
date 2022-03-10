@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.epf.rentmanager.dao.ClientDao;
 import com.epf.rentmanager.dao.ReservationDao;
 import com.epf.rentmanager.exception.DaoException;
 import com.epf.rentmanager.exception.ServiceException;
@@ -22,22 +21,30 @@ public class ReservationService {
 	}
 
 	public long create(Reservation reservation) throws ServiceException {
-		try {
-			this.reservationDao.create(reservation);
-		} catch (DaoException e) {
-			e.printStackTrace();
+		if(reservation.ismore7Days()) {
+			throw new ServiceException("La voiture est réservée plus de 7 jours par un même client");
 		}
-
+		else {
+			try {
+				this.reservationDao.create(reservation);
+			} catch (DaoException e) {
+				e.printStackTrace();
+			}
+		}
 		return 0;
 	}
 	
 	public long update(Reservation reservation) throws ServiceException {
-		try {
-			this.reservationDao.update(reservation);
-		} catch (DaoException e) {
-			e.printStackTrace();
+		if(reservation.ismore7Days()) {
+			throw new ServiceException("La voiture est réservée plus de 7 jours par un même client");
 		}
-
+		else {
+			try {
+				this.reservationDao.update(reservation);
+			} catch (DaoException e) {
+				e.printStackTrace();
+			}
+		}
 		return 0;
 	}
 

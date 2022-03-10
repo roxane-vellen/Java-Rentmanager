@@ -47,7 +47,7 @@
                                 	<h3>Client</h3>
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>Nom</th>
                                             <th>Prenom</th>                                            
                                             <th>Naissance</th>
@@ -67,7 +67,7 @@
                                     <h3>Vehicule</h3>
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>Constructeur</th>
                                             <th>Modele</th>
                                             <th>Nombre de places</th>

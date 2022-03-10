@@ -27,7 +27,7 @@
 							<div class="box-body no-padding">
 								<table class="table table-striped">
 									<tr>
-										<th style="width: 10px">#</th>
+										<th style="width: 30px">#</th>
 										<th>Marque</th>
 										<th>Modele</th>
 										<th>Nombre de places</th>

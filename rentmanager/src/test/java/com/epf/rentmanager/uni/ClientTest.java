@@ -12,51 +12,51 @@ import org.junit.jupiter.api.Test;
 public class ClientTest {
 
 	@Test
-	void isLegal_should_return_true_when_age_is_over_18() {
+	public void is_Legal_True() {
 		// Given
-		Client legalClient = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		Client client = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
 		// Then
-		assertTrue(legalClient.isLegal());
+		assertTrue(client.isLegal());
 	}
 
 	@Test
-	void isLegal_should_return_false_when_age_is_under_18() {
+	public void is_Legal_False() {
 		// Given
-		Client illegalClient = new Client("Smith", "John", "smith.john@mail.com", LocalDate.now());
+		Client client = new Client("Smith", "John", "smith.john@mail.com", LocalDate.now());
 		// Then
-		assertFalse(illegalClient.isLegal());
+		assertFalse(client.isLegal());
 	}
 
 	@Test
-	void isLong_should_return_true_when_last_name_is_over_3() {
+	public void is_Lastname_Long_True() {
 		// Given
-		Client longClient = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		Client client = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
 		// Then
-		assertTrue(longClient.isLastnameLong());
+		assertTrue(client.isLastnameLong());
 	}
 
 	@Test
-	void isLong_should_return_false_when_last_name_is_under_3() {
+	public void is_Lastname_Long_False() {
 		// Given
-		Client shortClient = new Client("Sm", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		Client client = new Client("Sm", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
 		// Then
-		assertFalse(shortClient.isLastnameLong());
+		assertFalse(client.isLastnameLong());
 	}
 
 	@Test
-	void isLong_should_return_true_when_first_name_is_over_3() {
+	public void is_Firstname_Long_True() {
 		// Given
-		Client longClient = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		Client client = new Client("Smith", "John", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
 		// Then
-		assertTrue(longClient.isFirstnameLong());
+		assertTrue(client.isFirstnameLong());
 	}
 
 	@Test
-	void isLong_should_return_false_when_first_name_is_under_3() {
+	public void is_Firstname_Long_False() {
 		// Given
-		Client shortClient = new Client("Smith", "Jo", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
+		Client client = new Client("Smith", "Jo", "smith.john@mail.com", LocalDate.parse("1999-10-09"));
 		// Then
-		assertFalse(shortClient.isFirstnameLong());
+		assertFalse(client.isFirstnameLong());
 	}
 
 }

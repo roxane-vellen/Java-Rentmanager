@@ -1,6 +1,6 @@
-C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\service\ClientServiceTest.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\dao\ClientDao.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\VehicleDeleteServlet.java
+C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\VehicleDetailsServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\service\VehicleService.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ReservationCreateServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\appconfiguration\WebConfiguration.java
@@ -9,6 +9,7 @@ C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentma
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ClientUpdateServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\utils\IOUtils.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\service\ReservationService.java
+C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ReservationDeleteServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ClientDetailsServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\model\Vehicle.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\model\Reservation.java
@@ -26,5 +27,7 @@ C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentma
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\dao\ReservationDao.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ReservationServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\main\Main.java
+C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ReservationDetailsServlet.java
+C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ReservationUpdateServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\ui\servelt\ClientCreateServlet.java
 C:\Users\roxan\Documents\Java cours\TP1\rentmanager\src\main\java\com\epf\rentmanager\dao\VehicleDao.java

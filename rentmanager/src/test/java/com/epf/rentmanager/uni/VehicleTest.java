@@ -10,31 +10,31 @@ import org.junit.jupiter.api.Test;
 public class VehicleTest {
 
 	@Test
-	void has_Proper_Constructor_True() {
+	public void has_Constructor_True() {
 		// Given
-		Vehicle legalVehicule = new Vehicle(1, "Renautlt", "clio", 4);
+		Vehicle vehicule = new Vehicle(1, "Renautlt", "clio", 4);
 		// Then
-		assertTrue(legalVehicule.hasConstructor());
+		assertTrue(vehicule.hasConstructor());
 	}
 
 	@Test
-	void has_Proper_Constructeur_False() {
+	public void has_Constructor_False() {
 		// Given
-		Vehicle legalVehicule = new Vehicle(1, null, "clio", 4);
+		Vehicle vehicule = new Vehicle(1, null, "clio", 4);
 		// Then
-		assertFalse(legalVehicule.hasConstructor());
+		assertFalse(vehicule.hasConstructor());
 	}
 	
 	@Test
-	void has_Proper_Model_True() {
+	public void has_Model_True() {
 		// Given
-		Vehicle legalVehicule = new Vehicle(1, "Renautlt", "clio", 4);
+		Vehicle vehicule = new Vehicle(1, "Renautlt", "clio", 4);
 		// Then
-		assertTrue(legalVehicule.hasModel());
+		assertTrue(vehicule.hasModel());
 	}
 
 	@Test
-	void has_Proper_Model_False() {
+	public void has_Model_False() {
 		// Given
 		Vehicle legalVehicule = new Vehicle(1, "Renautlt", null, 4);
 		// Then
@@ -42,18 +42,18 @@ public class VehicleTest {
 	}
 
 	@Test
-	void has_Proper_NbPlaces_True() {
+	public void right_NbPlaces_True() {
 		// Given
-		Vehicle legalVehicule = new Vehicle(1, "Renautlt", "clio", 4);
+		Vehicle vehicule = new Vehicle(1, "Renautlt", "clio", 4);
 		// Then
-		assertTrue(legalVehicule.rightNbPlaces());
+		assertTrue(vehicule.rightNbPlaces());
 	}
 
 	@Test
-	void has_Proper_NbPlaces_False() {
+	public void right_NbPlaces_False() {
 		// Given
-		Vehicle legalVehicule = new Vehicle(1, "Renautlt", "clio", 1);
+		Vehicle vehicule = new Vehicle(1, "Renautlt", "clio", 1);
 		// Then
-		assertFalse(legalVehicule.rightNbPlaces());
+		assertFalse(vehicule.rightNbPlaces());
 	}
 }

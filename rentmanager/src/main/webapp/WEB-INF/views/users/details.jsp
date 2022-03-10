@@ -47,7 +47,7 @@
                                 <div class="box-body no-padding">
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>ID Voiture</th>
                                             <th>Date de debut</th>
                                             <th>Date de fin</th>
@@ -55,8 +55,8 @@
                                         
                                         <c:forEach items="${reservations}" var="reservation">
 		                                    <tr>
-			                                    <td>${reservation.id}.</td>
-			                                    <td>${reservation.idvehicule}.</td>			                                 
+			                                    <td>${reservation.id}</td>
+			                                    <td>${reservation.idvehicule}</td>			                                 
 			                                    <td>${reservation.debut}</td>
 			                                    <td>${reservation.fin}</td>                         
 		                                	</tr>
@@ -70,7 +70,7 @@
                                 <div class="box-body no-padding">
                                     <table class="table table-striped">
                                         <tr>
-                                            <th style="width: 10px">#</th>
+                                            <th style="width: 30px">#</th>
                                             <th>Constructeur</th>
                                             <th>Modele</th>
                                             <th style=>Nombre de places</th>
@@ -78,8 +78,8 @@
                                         
                                         <c:forEach items="${vehicles}" var="vehicle">
 		                                    <tr>
-			                                    <td>${vehicle.id} </td>
-			                                    <td>${vehicle.constructor} </td>
+			                                    <td>${vehicle.id}</td>
+			                                    <td>${vehicle.constructor}</td>
 			                                    <td>${vehicle.model}</td>
 			                                    <td>${vehicle.nb_places}</td>                         
 		                                	</tr>
