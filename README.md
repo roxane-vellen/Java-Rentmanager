@@ -14,20 +14,20 @@ Exercices faits :
 
 
 Problèmes rencontrés :
-- Java
+- Java :
     Première fois que j'utilisais Java.
 
-- SQL
+- SQL :
     Assez flou comment se passe la génération des ID, j'ai d'abord fais manuellement 
   avant de me rendre compte que c'était pas nécessaire. Dans les DAO, j'ai mis un certain temps à comprendre 
   comment cela marchait avec les requêtes SQL.
 
-- Servlet
+- Servlet :
     Un peu flou comment marche une servlet avec l'implémentation des beans et spring. 
     Un début un peu cafouilleux pour faire apparaître les informations désirées avec les JSP, mais une fois compris
   ça allait vite.
 
-- Debug
+- Debug :
     J'ai eu du mal à faire du debug pour comprendre où était les erreurs, un peu fastidieux de passer par du code 
   dans main pour faire des tests.
 
