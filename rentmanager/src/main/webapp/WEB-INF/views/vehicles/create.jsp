@@ -62,6 +62,8 @@
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
+                                <a class="btn btn-info pull-right"  href="${pageContext.request.contextPath}/cars">Retour</a>
+                                <a class="btn pull-right"> </a>
                                 <button type="submit" class="btn btn-info pull-right">Ajouter</button>
                             </div>
                             <!-- /.box-footer -->

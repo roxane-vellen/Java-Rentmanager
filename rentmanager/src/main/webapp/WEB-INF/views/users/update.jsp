@@ -23,14 +23,16 @@
 						<!-- Horizontal Form -->
 						<div class="box">
 							<!-- form start -->
-							<form class="form-horizontal" method="post"	action="/rentmanager/users/update">
+							<form class="form-horizontal" method="post"
+								action="/rentmanager/users/update">
 								<div class="box-body">
 									<div class="form-group">
 										<label for="last_name" class="col-sm-2 control-label">Nom</label>
 
 										<div class="col-sm-10">
 											<input type="text" class="form-control" id="last_name"
-												name="last_name" value="${nom}" placeholder="Au moins 3 caractères" required>
+												name="last_name" value="${nom}"
+												placeholder="Au moins 3 caractères" required>
 										</div>
 									</div>
 									<div class="form-group">
@@ -38,7 +40,8 @@
 
 										<div class="col-sm-10">
 											<input type="text" class="form-control" id="first_name"
-												name="first_name" value="${prenom}" placeholder="Au moins 3 caractères" required>
+												name="first_name" value="${prenom}"
+												placeholder="Au moins 3 caractères" required>
 										</div>
 									</div>
 									<div class="form-group">
@@ -60,7 +63,10 @@
 								</div>
 								<!-- /.box-body -->
 								<div class="box-footer">
-									<button type="submit" class="btn btn-info pull-right">Effectuer modification(s)</button>
+									<a class="btn btn-info pull-right" href="${pageContext.request.contextPath}/users">Retour</a> 
+									<a class="btn pull-right"> </a>
+									<button type="submit" class="btn btn-info pull-right">Effectuer
+										modification(s)</button>
 								</div>
 								<!-- /.box-footer -->
 							</form>

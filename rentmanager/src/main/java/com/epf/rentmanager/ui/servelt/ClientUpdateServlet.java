@@ -64,7 +64,7 @@ public class ClientUpdateServlet extends HttpServlet {
         String email = request.getParameter("email");
         LocalDate naissance = LocalDate.parse(request.getParameter("birthdate"));
 
-        Client client = new Client(id, prenom, nom, email, naissance);
+        Client client = new Client(id, nom, prenom, email, naissance);
 
         try {
             clientService.update(client);

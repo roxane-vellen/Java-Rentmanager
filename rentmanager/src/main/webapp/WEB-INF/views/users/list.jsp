@@ -36,9 +36,9 @@
 									</tr>
 									<c:forEach items="${listUsers}" var="user">
 										<tr>
-											<td>${user.id}</td>
-											<td>${user.firstname}</td>
+											<td>${user.id}</td>											
 											<td>${user.lastname}</td>
+											<td>${user.firstname}</td>
 											<td>${user.email}</td>
 											<td>${user.birthdate}</td>
 											<td><a class="btn btn-primary" href="${pageContext.request.contextPath}/users/details?id=${user.id}">

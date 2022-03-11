@@ -85,6 +85,9 @@
                             </div>
                         </div>
                         <!-- /.tab-content -->
+                        <div class="box-footer">
+							<a class="btn btn-info pull-right" href="${pageContext.request.contextPath}/rents">Retour</a> 						
+						</div>
                     </div>
                     <!-- /.nav-tabs-custom -->
                 </div>

@@ -45,21 +45,23 @@ public class Main {
         VehicleService vehicleService = context.getBean(VehicleService.class);
         ReservationService reservationService = context.getBean(ReservationService.class);
         
-//        LocalDate date = LocalDate.parse("2000-01-30");
-//    	Client client = new Client("NomTest4", "PrenomTest4", "prenomtest.nomtest@mail.com", date);
-//    	
-//    	List<Client> listClients = new ArrayList<>();
+        LocalDate date = LocalDate.parse("2000-01-30");
+    	Client client = new Client("NomTest4", "PrenomTest4", "prenomtest.nomtest@mail.com", date);
+//    	System.out.println(client);
+    	
+    	List<Client> listClients = new ArrayList<>();
         
-//        Vehicle vehicle = new Vehicle("constructeur1", "modele1", 2);
-//        List<Vehicle> listVehicles = new ArrayList<>();
-//        
-//    	
+        Vehicle vehicle = new Vehicle("constructeur1", "modele1", 2);
+        List<Vehicle> listVehicles = new ArrayList<>();
+            	
 //    	try {
-//			int id = vehicleService.create(vehicle);
+//    		Client client = clientService.findById(2);
+//    		client.setFirstname(client.getFirstname()+"Test");
+//    		clientService.update(client);
 //			
-//			listVehicles = vehicleService.findAll();
+//			listClients = clientService.findAll();
 //    		
-//			System.out.println(listVehicles);
+//			System.out.println(listClients);
 //			
 //			
 //		} catch (ServiceException e) {

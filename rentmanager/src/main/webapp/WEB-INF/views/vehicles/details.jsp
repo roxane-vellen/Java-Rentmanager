@@ -92,6 +92,9 @@
                             <!-- /.tab-pane -->
                         </div>
                         <!-- /.tab-content -->
+                        <div class="box-footer">
+							<a class="btn btn-info pull-right" href="${pageContext.request.contextPath}/cars">Retour</a> 						
+						</div>
                     </div>
                     <!-- /.nav-tabs-custom -->
                 </div>

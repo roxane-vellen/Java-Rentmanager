@@ -90,8 +90,13 @@
                             <!-- /.tab-pane -->
                         </div>
                         <!-- /.tab-content -->
+                    
+	                    <div class="box-footer">
+							<a class="btn btn-info pull-right" href="${pageContext.request.contextPath}/users">Retour</a> 						
+						</div>
+                    
                     </div>
-                    <!-- /.nav-tabs-custom -->
+                    <!-- /.nav-tabs-custom -->                    
                 </div>
                 <!-- /.col -->
             </div>

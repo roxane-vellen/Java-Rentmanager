@@ -36,7 +36,7 @@ public class ClientDao {
 			Connection conn = ConnectionManager.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(CREATE_CLIENT_QUERY);
 						
-			pstmt.setString(1, client.getLastname());
+			pstmt.setString(1, client.getLastname().toUpperCase());
 			pstmt.setString(2, client.getFirstname());
 			pstmt.setString(3, client.getEmail());
 			pstmt.setDate(4, Date.valueOf(client.getBirthdate()));			
@@ -55,8 +55,8 @@ public class ClientDao {
 		try {
 			Connection conn = ConnectionManager.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(UPDATE_CLIENT_QUERY);
-			
-			pstmt.setString(1, client.getLastname());
+						
+			pstmt.setString(1, client.getLastname().toUpperCase());
 			pstmt.setString(2, client.getFirstname());
 			pstmt.setString(3, client.getEmail());
 			pstmt.setDate(4, Date.valueOf(client.getBirthdate()));
@@ -189,11 +189,11 @@ public class ClientDao {
 			PreparedStatement pstmt = conn.prepareStatement(FIND_EMAIL_QUERY);
 			pstmt.setString(1, client.getEmail());
 			
-			ResultSet resultSet = pstmt.executeQuery();
-			while (resultSet.next()) {
-				//if (resultSet.getInt("id") != client.getId()) {
-				sameEmail = true;
-				//}
+			ResultSet rs = pstmt.executeQuery();
+			while (rs.next()) {
+				if (rs.getInt("id") != client.getId()) {
+					sameEmail = true;
+				}
 			}
 			pstmt.close();
 			conn.close();

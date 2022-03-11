@@ -87,7 +87,7 @@ public class Client {
 	}
 
 	public boolean isLastnameLong() {
-		if (this.getLastname().length() >= 3) {
+		if (!this.getLastname().isBlank() && this.getLastname().length() >= 3) {
 			return true;
 		} else {
 			return false;
@@ -95,15 +95,14 @@ public class Client {
 	}
 
 	public boolean isFirstnameLong() {
-		if (this.getFirstname().length() >= 3) {
+		if (!this.getFirstname().isBlank() && this.getFirstname().length() >= 3) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	public boolean isEmailRight() {
-		
+	public boolean isEmailRight() {		
 		if (this.getEmail().contains("@") && !this.getEmail().contains(" ")) {
 			
 			int indexA = this.getEmail().indexOf("@");
