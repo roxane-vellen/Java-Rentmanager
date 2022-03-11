@@ -1,4 +1,4 @@
-"# Java-Rentmanager" 
+
 Roxane VELLEN
 roxane.vellen@epfedu.fr
 11/03/2022
@@ -30,4 +30,7 @@ Problèmes rencontrés :
 - Debug :
     J'ai eu du mal à faire du debug pour comprendre où était les erreurs, un peu fastidieux de passer par du code 
   dans main pour faire des tests.
+  
+- Test : 
+    Problèmes avec les imports pour le Mock et pas compris comment tester les services
 
